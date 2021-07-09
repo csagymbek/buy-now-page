@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Buy Now Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="small-image-box">
+        <img
+          src="./assets/hoodie-front.jpeg"
+          alt=""
+          onclick="handleClick(this)"
+        />
+        <img
+          src="./assets/hoodie-front-full.jpeg"
+          alt=""
+          onclick="handleClick(this)"
+        />
+        <img
+          src="./assets/hoodie-back-right.jpeg"
+          alt=""
+          onclick="handleClick(this)"
+        />
+        <img
+          src="./assets/hoodie-front-left.jpeg"
+          alt=""
+          onclick="handleClick(this)"
+        />
+        <img
+          src="./assets/hoodie-left.jpeg"
+          alt=""
+          onclick="handleClick(this)"
+        />
+      </div>
+      <div class="large-image-box">
+        <img src="./assets/hoodie-front-full.jpeg" alt="" id="full-image" />
+      </div>
+      <div class="info-box">
+        <h2>RAVEN HOODIE</h2>
+        <p class="price">$132.00</p>
+        <div class="size-boxes">
+          <div class="size-box">XXS</div>
+          <div class="size-box">XXXL</div>
+          <div class="size-box">XS</div>
+          <div class="size-box">S</div>
+          <div class="size-box">M</div>
+          <div class="size-box">L</div>
+          <div class="size-box">XL</div>
+          <div class="size-box">XXL</div>
+        </div>
+        <a href="#" class="out-of-stock">is your size out of stock?</a>
+        <small
+          >4 interest-free payments $33.00 with <strong>Klarna.</strong></small
+        >
+        <a href="#" class="learn-more">Learn more</a>
+        <div class="btn-box">
+          <a href="#" class="btn">ADD TO BAG</a>
+          <div class="heart-box">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <p class="notes">NOTES</p>
+        <p class="info-p">
+          Relax with us. The Raven Hoodie. Off-duty champion. Crafted from a
+          cotton-blend fabric. Extra soft finish. Hooded. Zip up. Long sleeves.
+          Ramskull on the chest. You know the drill.
+        </p>
+        <ul>
+          <li><span>-</span>Loungewear</li>
+          <li><span>-</span>Kangaroo pocket</li>
+          <li><span>-</span>Drawstring hood</li>
+          <li><span>-</span>Long sleeve</li>
+          <li><span>-</span>Ramskull embroidery</li>
+          <li><span>-</span>Carbon brushed cotton fleece</li>
+          <li>
+            <span>-</span>Model is 6'1.5"/186cm and is wearing size Medium
+          </li>
+          <li>
+            <span>-</span>ALLSAINTS cotton products support more sustainable
+            cotton farming. Better Cotton is sourced via a system of Mass
+            Balance - <a href="#">find out more</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const handleClick = (img) => {
+        let fullImg = document.getElementById("full-image");
+        fullImg.src = img.src;
+      };
+    </script>
+  </body>
+</html>
